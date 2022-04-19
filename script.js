@@ -33,6 +33,7 @@ function laukums(m1, m2, m3) {
         pusper * ((pusper - m1) * (pusper - m2) * (pusper - m3)));
     console.log(tlaukums);
     return tlaukums;
+}
     function rezultats() {
         const m = nolasa();
         m1 = m.m1; m2 = m.m2; m3 = m.m3;
@@ -48,7 +49,7 @@ function laukums(m1, m2, m3) {
                     t += "Tas ir vienādsānu trijstūris."
 
                 }
-            }
+            
             const p = perimetrs(m1, m2, m3);
             const s = Math.round(laukums(m1, m2, m3) * 100) / 100;
             t += "Perimetrs ir " + p + " un laukums ir " + s + ".";
@@ -56,12 +57,12 @@ function laukums(m1, m2, m3) {
     }
     console.log(t);
     return t;
-}
+    }
 function izvadaTekstu() {
     const teksts = rezultats();
     console.log(teksts);
     const sakne = document.getElementById("izvade");
     const raksti = document.createElement("p");
     raksti.innerHTML = teksts;
-    sakne.appendChild(raskti);
+    sakne.appendChild(raksti);
 }
