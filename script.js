@@ -51,13 +51,17 @@ function laukums(m1, m2, m3) {
             }
             const p = perimetrs(m1, m2, m3);
             const s = Math.round(laukums(m1, m2, m3) * 100) / 100;
-            t += "Perimetrs ir "
+            t += "Perimetrs ir " + p + " un laukums ir " + s + ".";
         }
     }
+    console.log(t);
+    return t;
 }
 function izvadaTekstu() {
     const teksts = rezultats();
     console.log(teksts);
     const sakne = document.getElementById("izvade");
     const raksti = document.createElement("p");
-    raksti.innerHTML
+    raksti.innerHTML = teksts;
+    sakne.appendChild(raskti);
+}
